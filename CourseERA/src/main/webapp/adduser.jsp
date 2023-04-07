@@ -23,7 +23,7 @@
             errmsg = "User name can't be empty!";
         } else if(pass == null || pass.isEmpty()){
             errmsg = "password can't be empty!";
-        } else if(type == null || type.isEmpty()){
+        } else if(type == null || type.isEmpty() || (!type.equals("teacher") && !type.equals("student"))){
             errmsg = "User type must be included!";
         }
 
